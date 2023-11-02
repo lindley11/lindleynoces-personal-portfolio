@@ -84,3 +84,23 @@ $(document).ready(function() {
         $('.message-popup').fadeIn().delay(2000).fadeOut(); // Show for 2 seconds
     });
 });
+
+
+
+document.querySelector('.dark-mode-toggle').addEventListener('click', function() {
+    var darkModeActive = document.body.classList.toggle('dark-mode');
+    var darkModeMessage = document.getElementById('dark-mode-message');
+    var lightModeMessage = document.getElementById('light-mode-message');
+
+    if (darkModeActive) {
+        darkModeMessage.style.display = 'block';
+        setTimeout(function() {
+            darkModeMessage.style.display = 'none';
+        }, 500); // Hide the message after 2 seconds (adjust as needed)
+    } else {
+        lightModeMessage.style.display = 'block';
+        setTimeout(function() {
+            lightModeMessage.style.display = 'none';
+        }, 500); // Hide the message after 2 seconds (adjust as needed)
+    }
+});
