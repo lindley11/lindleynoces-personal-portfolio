@@ -66,7 +66,7 @@ section .title::before{
     transform: translateX(-50%);
 }
 section .title::after{
-    position: absolute;
+    position:absolute;
     bottom: -8px;
     left: 50%;
     font-size: 20px;
@@ -160,7 +160,6 @@ section .title::after{
     filter: brightness(90%);
 }
 
-
 /* home section styling */
 .home{
     display: flex;
@@ -214,7 +213,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "Who i am";
 }
 .about .about-content .left{
     width: 45%;
@@ -259,7 +258,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "What i know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -337,7 +336,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "get in touch";
+    content: "Get in touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -369,7 +368,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #000000;
 }
 .contact .right form .fields{
     display: flex;
@@ -585,4 +584,148 @@ footer span a:hover{
     border-radius: 6px;
     display: none; /* Initially hide the popup */
     z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+.scroll-paragraph {
+    max-height: 580px; /* Set the maximum height for the scrollable area */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    border: 1px solid crimson; /* Add a border for visual clarity */
+    padding: 10px; /* Add some padding for spacing */
+}
+
+body.dark-mode {
+    background-color: #565656;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: black;
+}
+
+/* Add other styles for dark mode as needed */
+
+.dark-mode-toggle i {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.dark-mode-toggle i:hover {
+    transform: scale(1.1);
+}
+
+/* Light Mode Styles */
+.contact {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .contact {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Add any other styles you
+/* Dark Mode Icon Styles */
+body.dark-mode .contact .icons i {
+    color: #ffffff;
+}
+
+
+/* Light Mode Styles */
+.skills {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .skills {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Add any other styles you
+/* Dark Mode Icon Styles */
+body.dark-mode .skills .icons i {
+    color: #ffffff;
+}
+
+/* Light Mode Styles */
+.about {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .about {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Add any other styles you
+/* Dark Mode Icon Styles */
+body.dark-mode .about .icons i {
+    color: #ffffff;
+}
+
+
+/* Light Mode Subtitle Styles */
+/* Light Mode Styles */
+.sub-title {
+    color: #333333; /* Set text color for light mode */
+}
+
+/* Dark Mode Styles */
+body.dark-mode .sub-title {
+    color: #ffffff; /* Set text color for dark mode */
+}
+
+/* Light Mode Title::after Styles */
+
+.skills .title::after{
+    color: crimson;
+}
+
+/* Dark Mode Title::after Styles */
+body.dark-mode .skills .title::after{
+    color: crimson;
+    background-color: transparent;
+}
+
+
+.about .title::after{
+    color: crimson;
+}
+
+/* Dark Mode Title::after Styles */
+body.dark-mode .about .title::after{
+    color: crimson;
+    background-color: transparent;
+}
+
+.contact .title::after{
+    color: crimson;
+}
+
+/* Dark Mode Title::after Styles */
+body.dark-mode .contact .title::after{
+    color: crimson;
+    background-color: transparent;
+}
+
+.message-popup1 {
+    position: fixed;
+    top: 20px; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: none;
+    z-index: 9999;
+}
+
+.dark-mode .message-popup {
+    background-color: #000; /* Dark mode styles */
 }
